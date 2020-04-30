@@ -29,7 +29,7 @@ body #home-text p {
 }
 
 .carousel-image-1 {
-  background: url('../img/image1.jpg');
+  background: url('../img/image3.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -41,10 +41,21 @@ body #home-text p {
 }
 
 .carousel-image-3 {
-  background: url('../img/image3.jpg');
+  background: url('../img/image1.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
+
+.btn-fund {
+color: #000;
+border-color: #00c0d9
+}
+
+.btn-fund:hover {
+  color: #fff;
+  border-color: #00c0d9;
+  background-color: #00c0d9
+  }
 
 .home-title {
   position: relative;
