@@ -139,9 +139,16 @@ justify-content: center
   color: #007bff
 }
 
+.home-title .container {
+  padding-top: 3em;
+}
 
-
-
+@media (max-width: 500px) {
+  .home-title .container {
+    padding-top: 15%;
+    padding: 1em;
+  }
+}
 
 
 .animation-target {
