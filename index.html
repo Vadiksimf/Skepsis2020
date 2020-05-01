@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <title>Escape to diversity</title>
 </head>
 
@@ -62,7 +62,7 @@
       </ol>
       <div class="carousel-inner">
 
-        <div class="carousel-item carousel-image-1">
+        <div class="carousel-item carousel-image-1 active">
           <div class="container">
             <div class="carousel-caption d-sm-block text-right mb-5">
               <h1 class="display-3">Escape to diversity</h1>
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="carousel-item carousel-image-2 active">
+        <div class="carousel-item carousel-image-2">
           <div class="container">
             <div class="carousel-caption d-sm-block text-right mb-5">
               <h1 class="display-3">by Visegrad Fund</h1>
@@ -82,7 +82,6 @@
             </div>
           </div>
         </div>
-
 
 
         <!--
@@ -97,7 +96,7 @@
         </div>
       </div>
       -->
-
+      <!--
       <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
@@ -105,6 +104,8 @@
       <a href="#myCarousel" data-slide="next" class="carousel-control-next">
         <span class="carousel-control-next-icon"></span>
       </a>
+      -->
+
     </div>
   </section>
 
@@ -115,8 +116,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <h3>THINK CRITICAL. SKEPSIS</h3>
-          <p class="text-justify">Think critical is an international project which is supported by the Visegrad Fund. This project will deal with the low level of media literacy (ML) and information literacy (IL) among young people aged 18-24 in V4 region</p>
+          <h3 class="text-uppercase">Visegrad Fund</h3>
+          <p class="text-justify">The Fund is an international donor organization, established in 2000 by the governments of the Visegrad Group countries—Czechia, Hungary, Poland and Slovakia to promote regional cooperation in the Visegrad region (V4) as well as between the V4 region and other countries, especially in the Western Balkans and Eastern Partnership regions.</p>
           <div class="col-12 text-center">
             <a href="https://www.visegradfund.org" target="_blank" class="btn btn-outline-danger btn-lg btn-fund">Learn More</a>
           </div>
@@ -318,6 +319,7 @@
             <a href="http://youthfullyyours.sk/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fab fa-internet-explorer"></i> Web-page</a>
         </div>
       </div>
+      <!--
       <div class="row pb-5">
         <div class="col">
           <div class="info-header">
@@ -325,6 +327,7 @@
           </div>
         </div>
       </div>
+      -->
     </div>
   </section>
   
@@ -346,8 +349,7 @@
   </footer>
 
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -367,20 +369,6 @@
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
       event.preventDefault();
       $(this).ekkoLightbox();
-    });
-
-    // Video Play
-    $(function () {
-      // Auto play modal video
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-          $(theModal + ' iframe').attr('src', videoSRC);
-        });
-      });
     });
 
   </script>
