@@ -73,15 +73,9 @@ border-color: #00c0d9
 }
 
 @media (max-width: 500px) {
-  
-  .home-title .container {
-    padding-top: 15%;
-  }
-
   .home-title .home-title--lg {
     padding-top: 7%;
   }
-
 }
 
 
