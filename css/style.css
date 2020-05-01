@@ -68,6 +68,23 @@ border-color: #00c0d9
   color: #fff;
 }
 
+.home-title .container {
+  padding-top: 3em;
+}
+
+@media (max-width: 500px) {
+  
+  .home-title .container {
+    padding-top: 15%;
+  }
+
+  .home-title .home-title--lg {
+    padding-top: 7%;
+  }
+
+}
+
+
 .dark-overlay {
   position: absolute;
   top: 0;
@@ -151,16 +168,7 @@ justify-content: center
   color: #007bff
 }
 
-.home-title .container {
-  padding-top: 3em;
-}
 
-@media (max-width: 500px) {
-  .home-title .container {
-    padding-top: 15%;
-    padding: 1em;
-  }
-}
 
 
 .animation-target {
