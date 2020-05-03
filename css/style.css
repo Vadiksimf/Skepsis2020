@@ -43,6 +43,7 @@ body #home-text p {
   background: url('../img/image3.jpg');
   background-size: cover;
   background-position-y: -100px;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -50,12 +51,14 @@ body #home-text p {
   background: url('../img/image2.jpg');
   background-size: cover;
   background-position-y: -100px;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .carousel-image-3 {
   background: url('../img/image1.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
