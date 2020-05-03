@@ -28,16 +28,22 @@ body #home-text p {
   height: 450px;
 }
 
+.stroke {
+  text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+               #000 -1px 1px 0, #000 1px -1px 0;
+ }
+
 .carousel-image-1 {
   background: url('../img/image3.jpg');
   background-size: cover;
+  background-position-y: -100px;
   background-attachment: fixed;
 }
-
 
 .carousel-image-2 {
   background: url('../img/image2.jpg');
   background-size: cover;
+  background-position-y: -100px;
   background-attachment: fixed;
 }
 
@@ -45,6 +51,18 @@ body #home-text p {
   background: url('../img/image1.jpg');
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .carousel-image-2 {
+    background-position-x: -350px;
+  }
+}
+
+@media (max-width: 452px) {
+  .carousel-image-1 {
+    background-position-x: -150px;
+  }
 }
 
 .btn-fund {
